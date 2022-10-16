@@ -23,7 +23,7 @@ export default function App() {
   }, [])
 
   async function apiFotos() { 
-    const endpoint = "/fotos.json";
+    const endpoint = "https://hlcxpl.github.io/fotos.json";
     const resp = await fetch(endpoint)
     const data = await resp.json()
     setGaleria(data.photos)
